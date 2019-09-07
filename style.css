@@ -5,68 +5,177 @@
 }
 
 a{
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .clearfix::after{
-	content: "";
-	display: block;
-	clear: both;
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .container{
-	width: 1024px;
-	margin: 0 auto;
+    width: 1024px;
+    margin: 0 auto;
 }
 
-/* header */
+/* ====header==== */
 header{
-	width: 100%;
-	height: 70px;
-	background-color: #EC715F;
+    width: 100%;
+    height: 70px;
+    background-color: #EC715F;
 }
 
 .logo{
-	height: 70px;
-	float: left;
+    height: 70px;
+    float: left;
 }
 
 .nav{
-	float: right;
+    float: right;
 }
 
 .nav-list{
-	float: left;
-	width: 120px;
-	line-height: 70px;
-	color: #FAFAFA;
-	padding: 0 30px;
-	list-style: none;
-	font-size: 16px;
+    float: left;
+    width: 120px;
+    line-height: 70px;
+    color: #FAFAFA;
+    padding: 0 30px;
+    list-style: none;
+    font-size: 16px;
 }
 
 .nav-list a{
-	color: #FAFAFA;
+    color: #FAFAFA;
 }
 
-/* main visuall */
+/* =====main visuall====== */
 #mv {
-	width: 100%;
-	height: 650px;
-	text-align: center;
-	color: #FAFAFA;
-	background-image: url("img/mv.png");
-	background-size: cover;
-	background-position: center;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    color: #FAFAFA;
+    background-image: url("img/mv.png");
+    background-size: cover;
+    background-position: center;
 }
 
 .mv-title {
-	padding-top: 200px;
-	font-family: 'Raleway', sans-serif;
-	font-size: 64px;
+    padding-top: 200px;
+    font-family: 'Raleway', sans-serif;
+    font-size: 64px;
 }
 
 .mv-text {
   font-size: 20px;
 }
+
+/* =====portforio==== */
+#portforio {
+  background-color: #ECEFF1;
+}
+/* containerは横幅1024px 縦margin0 横auto*/
+
+.heading{
+  padding-top: 90px;
+  text-align: center;
+  font-size: 32px;
+}
+
+.heading::after {
+  content: "";
+  display: block;
+  width: 70px;
+  height: 3px;
+/* header-textにてpaddingで30px空ける */
+  margin: 8px auto 0 auto;
+  background-color: #EC715F;
+}
+
+.heading-text {
+  padding-top: 30px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.production-group{
+  width: 920px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+}
+/*  portforio写真部　*/
+.production{
+  float: left;
+  width: 300px;
+  height: 250px;
+  /* 上、右に30pxのマージン */
+  margin: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+}
+/* 上段の上のマージンは0 */
+.production:nth-child(-n+3){
+  margin-top: 0;
+}
+/* 一番右端のマージンは0 */
+.production:nth-child(3n){
+  margin-right: 0;
+}
+
+.bg-1{
+  background-image: url(img/sketch.jpg);
+}
+
+.bg-2{
+  background-image: url(img/websuku.png);
+}
+
+.bg-3{
+  background-image: url(img/write.jpg);
+}
+
+.bg-4{
+  background-image: url(img/webcamp.png);
+}
+
+.bg-5{
+  background-image: url(img/talk.jpg);
+}
+
+.bg-6{
+  background-image: url(img/webcamp-mother.png);
+}
+/* =====Feature===== */
+#feature {}
+
+.strength-group {
+  width: 980px;
+  padding: 30px 0 90px;
+  margin: 0 auto;
+}
+
+.strength{
+  float: left;
+  width: 320px;
+  margin-right: 10px;
+  /*font-awesomeのアイコンのためのコード*/
+  text-align: center;
+  font-size: 60px;
+}
+
+i {
+  color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
